@@ -1,77 +1,19 @@
 import React, { Component } from 'react';
-import { Grid, Jumbotron, Button } from 'react-bootstrap';
+import { Grid, Jumbotron, Button } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 import NavBar from './NavBar';
+// import Slider from 'react-slick';
+import ProductsContainer from './ProductsContainer';
+import DepartmentsContainer from './DepartmentsContainer';
 
 class App extends Component {
   render() {
     return (
       <div>
         <NavBar />
+        <ProductsContainer />
 
-        <Jumbotron>
-          <Grid>
-            <h1>Welcome to eShop</h1>
-            <p>
-              <Button
-                bsStyle="success"
-                bsSize="large"
-                href="http://react-bootstrap.github.io/components.html"
-                target="_blank"
-              >
-                View React Bootstrap Docs
-              </Button>
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-          </Grid>
-        </Jumbotron>
+        <DepartmentsContainer />
       </div>
     );
   }

@@ -15,5 +15,77 @@ body {
 }
 
 .department-container {
+  margin: 10px;
   padding: 20px;
+}
+
+.department-component {
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #444;
+}
+
+.department-component img {
+  padding-left: 30%;
+  padding-bottom: 20px;
+}
+
+.carousel-control {
+  width: 4%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  margin-left: 15px;
+  background-image: none;
+}
+@media (max-width: 767px) {
+  .carousel-inner .active.left {
+    left: -100%;
+  }
+  .carousel-inner .next {
+    left: 100%;
+  }
+  .carousel-inner .prev {
+    left: -100%;
+  }
+  .active > div {
+    display: none;
+  }
+  .active > div:first-child {
+    display: block;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .carousel-inner .active.left {
+    left: -50%;
+  }
+  .carousel-inner .next {
+    left: 50%;
+  }
+  .carousel-inner .prev {
+    left: -50%;
+  }
+  .active > div {
+    display: none;
+  }
+  .active > div:first-child {
+    display: block;
+  }
+  .active > div:first-child + div {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-inner .active.left {
+    left: -25%;
+  }
+  .carousel-inner .next {
+    left: 25%;
+  }
+  .carousel-inner .prev {
+    left: -25%;
+  }
 }

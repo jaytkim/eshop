@@ -24,7 +24,7 @@ const NavBar = props => (
             name="shopping-basket"
             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
           />
-          &nbsp; <span class="brand"> eShop </span>
+          &nbsp; <span className="brand"> eShop </span>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -67,7 +67,7 @@ const NavBar = props => (
       </Nav>
     </Navbar.Collapse>
 
-    <nav class="nav-tabs">
+    <nav className="nav-tabs">
       <ul>
         <li>
           <Link to="/">Home</Link>

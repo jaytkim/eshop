@@ -68,7 +68,7 @@ class ProductsContainer extends Component {
           <Row>
             {this.state.products.map((product, index) => {
               return (
-                <Col sm="2">
+                <Col sm={2}>
                   <ProductComponent
                     img={product.img}
                     price={product.price}

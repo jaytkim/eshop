@@ -5,7 +5,7 @@ import { Carousel, Col, Row, Panel } from 'react-bootstrap';
 
 class ProductListContainer extends Component {
   render() {
-    const { products } = this.props;
+    const { products, items } = this.props;
     console.log(products.length);
 
     return (
@@ -33,7 +33,7 @@ class ProductListContainer extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <Row>
-                {products.map((product, index) => {
+                {items.map((product, index) => {
                   return (
                     <Col xs={6} md={3} lg={2}>
                       <ProductComponent

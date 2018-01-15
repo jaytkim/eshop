@@ -67,11 +67,55 @@ class App extends Component {
   }
 
   render() {
+    let items = [
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1b707601-aacd-4027-9e5e-0bf873088e5e.png',
+        price: '$6.50',
+        name: 'Glutino Gluten Free Blueberry Breakfast Bar',
+        weight: '200 g'
+      },
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bec66419-8d50-4f28-9486-3db3d8a9dc6f.png',
+        price: '$12.05',
+        name: 'No Name Baked Beans Tomato Sauce',
+        weight: '4776 ml'
+      },
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1566d36e-98d8-421d-b6b3-6fa43908a72c.png',
+        price: '$6.55',
+        name: 'Sable & Rosenfeld Hot Pepper Rum Tipsy Jerk Marinade',
+        weight: '340 ml'
+      },
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c37cba5b-3116-4dbe-9854-3cc14f25a349.png',
+        price: '$2.49',
+        name: 'Pc Regular White Whole Mushrooms',
+        weight: '27 g'
+      },
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2f469dd2-921a-4ee4-ac06-2f598956e967.png',
+        price: '$1.99',
+        name: 'Yellow Onion Bag',
+        weight: '3 lbs'
+      },
+      {
+        img:
+          'https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_44ab4eac-1878-4a27-baaa-7dfa30c590d9.png',
+        price: '$1.58',
+        name: 'Green Cabbage',
+        weight: 'each'
+      }
+    ];
     return (
       <div>
         <NavBar />
 
-        <ProductListContainer products={this.state.products} />
+        <ProductListContainer products={this.state.products} items={items} />
 
         <DepartmentsContainer />
       </div>

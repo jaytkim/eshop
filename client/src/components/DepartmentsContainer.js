@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Jumbotron, Col, Row, Panel } from 'react-bootstrap';
+import { Jumbotron, Col, Row } from 'react-bootstrap';
 import '../index.css';
 
 class DepartmentsContainer extends Component {
   render() {
+    // This temp data. Real Departments data must be called from backend.
     const departments = [
       {
         img:
@@ -105,9 +106,9 @@ class DepartmentsContainer extends Component {
         <Row>
           {departments.map((department, index) => {
             return (
-              <Col xs={6} md={3} lg={2}>
+              <Col xs={6} md={3} lg={2} key={index}>
                 <div className="department-component">
-                  <img width="100%" src={department.img} />
+                  <img width="100%" alt="Department" src={department.img} />
                   <Link to="/">{department.name}</Link>
                 </div>
               </Col>

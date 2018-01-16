@@ -5,7 +5,7 @@
 }
 
 #search {
-  width: 500px;
+  width: 100%;
 }
 
 #btn-cart {
@@ -22,6 +22,16 @@ ul {
 ul li {
   display: inline-block;
   margin: 0 20px;
+}
+.input-group {
+  width: 100%;
+}
+.form-group {
+  width: 100%;
+}
+.navbar-form {
+  width: 50%;
+  min-width: 20%;
 }
 
 .nav-tabs a {

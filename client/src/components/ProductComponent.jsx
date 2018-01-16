@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  CardImg,
-  Row,
-  Col
-} from 'reactstrap';
+import { Card, CardTitle, CardText, CardImg } from 'reactstrap';
 
 class ProductComponent extends Component {
   render() {

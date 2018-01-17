@@ -2,6 +2,24 @@
   "data": [
     {
       "img":
+        "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3de1f979-545a-45d9-87c2-249164ea6e6a.png",
+      "price": "$1.90",
+      "name": "Chinese Cabbage",
+      "weight": "per kg",
+      "department": { "id": 1, "name": "Produce" },
+      "aisles": { "id": 1, "name": "Fresh Vegetables" }
+    },
+    {
+      "img":
+        "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ffabd81d-e5cc-47eb-b064-e800bc5ce366.png",
+      "price": "$3.25",
+      "name": "Red Chard",
+      "weight": "per kg",
+      "department": { "id": 1, "name": "Produce" },
+      "aisles": { "id": 1, "name": "Fresh Vegetables" }
+    },
+    {
+      "img":
         "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e567bde2-e681-4f99-a9ea-206fa4a1a33d.png",
       "price": "$2.70",
       "name": "Green Giant Simply Steam Summer Sweet Peas With Butter Sauce",

@@ -73,7 +73,7 @@ class NavBar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/departments">Departments</Link>
+              <Link to="/browse">Departments</Link>
             </li>
             <li>
               <Link to="/referals">Get $50</Link>

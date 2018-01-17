@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { Grid } from 'react-bootstrap';
+
 import NavBar from './NavBar';
-import MainCarousel from './MainCarousel';
+import StoreFront from './StoreFront';
+import DepartmentsList from './DepartmentsList';
 import DepartmentsContainer from './DepartmentsContainer';
 // import Products from './ProductsContainer';
 
@@ -9,8 +13,13 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <MainCarousel />
-        <DepartmentsContainer />
+        <Grid>
+          <Switch>
+            <Route path="/" exact component={StoreFront} />
+            <Route path="/browse" component={DepartmentsList} />
+            <Route path="/department/:id" component={DepartmentsContainer} />
+          </Switch>
+        </Grid>
       </div>
     );
   }

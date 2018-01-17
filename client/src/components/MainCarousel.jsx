@@ -20,7 +20,7 @@ class MainCarousel extends Component {
     ];
 
     return (
-      <Panel className="main-contanier">
+      <Panel>
         <Panel.Body>
           <Carousel>
             {images.map((img, index) => {

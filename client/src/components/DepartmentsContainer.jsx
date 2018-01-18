@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
 import Products from './ProductsContainer';
 
@@ -29,11 +29,11 @@ class DepartmentsContainer extends Component {
     return (
       <div>
         <Row>
-          <Col xs={6} md={9} lg={2}>
+          <Col xs={12} sm={2} md={3} lg={2}>
             <h4>Departments</h4>
             Side Bar
           </Col>
-          <Col xs={6} md={3} lg={10}>
+          <Col xs={12} sm={10} md={9} lg={10}>
             <h1>Produce</h1>
             <Products />
           </Col>

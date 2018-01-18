@@ -12,6 +12,10 @@ body {
   overflow: hidden;
 }
 
+.main-contanier {
+  padding: 20px;
+}
+
 .department-container {
   background-color: #eee;
   padding: 10px 20px;

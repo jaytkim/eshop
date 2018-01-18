@@ -19,9 +19,6 @@ class ProductsContainer extends Component {
       When you make an api call, axios(npm package) is one option.
     **/
     let items = Items.data;
-    Items.data.map(item => {
-      console.log(item.department);
-    });
     // set the state of products when you get items form db
     this.setState({ products: items });
   }
@@ -30,20 +27,18 @@ class ProductsContainer extends Component {
     return (
       <Panel className="main-contanier">
         <Panel.Body>
-          <Row>
-            {this.state.products.map((product, i) => {
-              return (
-                <Col sm={2} key={i}>
-                  <ProductComponent
-                    img={product.img}
-                    price={product.price}
-                    name={product.name}
-                    weight={product.weight}
-                  />
-                </Col>
-              );
-            })}
-          </Row>
+          {this.state.products.map((product, i) => {
+            return (
+              <div className="col-lg-2">
+                <ProductComponent
+                  img={product.img}
+                  price={product.price}
+                  name={product.name}
+                  weight={product.weight}
+                />
+              </div>
+            );
+          })}
         </Panel.Body>
       </Panel>
     );

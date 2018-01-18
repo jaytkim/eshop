@@ -2,6 +2,24 @@
   "data": [
     {
       "img":
+        "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1e68cfdf-7640-4e37-a867-da8c775b5f3a.png",
+      "price": "$3.99",
+      "name": "Cauliflower",
+      "weight": "each",
+      "department": { "id": 1, "name": "Produce" },
+      "aisles": { "id": 1, "name": "Fresh Vegetables" }
+    },
+    {
+      "img":
+        "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2b78e2c6-eaf0-45c4-bdc2-2fcc3018b4e0.png",
+      "price": "$1.99",
+      "name": "Romaine Lettuce",
+      "weight": "each",
+      "department": { "id": 1, "name": "Produce" },
+      "aisles": { "id": 1, "name": "Fresh Vegetables" }
+    },
+    {
+      "img":
         "https://d2d8wwwkmhfcva.cloudfront.net/310x/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3de1f979-545a-45d9-87c2-249164ea6e6a.png",
       "price": "$1.90",
       "name": "Chinese Cabbage",

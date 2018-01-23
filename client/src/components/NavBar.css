@@ -1,25 +1,27 @@
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+ul li {
+  /*display: inline-block;*/
+  margin: 5px;
+}
+
 .brand {
   font-size: 20px;
   font-weight: bold;
   color: #f37272;
 }
 
-#search {
-  width: 100%;
-}
-
-#btn-cart {
-  margin-top: 10px;
-}
-
-ul {
+.nav-tabs ul {
   list-style-type: none;
   margin: 0;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
 }
-ul li {
+.nav-tabs ul li {
   display: inline-block;
   margin: 0 20px;
 }

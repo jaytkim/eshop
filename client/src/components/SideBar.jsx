@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Row } from 'react-bootstrap';
-
 import Departments from '../db/departments.json';
-import '../index.css';
 
-class DepartmentsList extends Component {
+class SideBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,32 +18,26 @@ class DepartmentsList extends Component {
     //      .then(data => {this.setState({ departments: data })})
     //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     const departments = Departments.data; // This is temp data from json file.
+
     this.setState({ departments: departments });
   }
 
   render() {
     return (
-      <div className="department-container">
-        <h4>Browse Departments</h4>
-
-        <Row>
-          {this.state.departments.map((department, index) => {
+      <div>
+        <h3>Departments</h3>
+        <ul>
+          {this.state.departments.map((department, i) => {
             return (
-              <Col xs={6} md={3} lg={2} key={index}>
-                <div className="department-component">
-                  <p>{this.props.params}</p>
-                  <img width="100%" alt="Department" src={department.img} />
-                  <Link to={`/departments/${department.id}`}>
-                    {department.name}
-                  </Link>
-                </div>
-              </Col>
+              <Link to={`/departments/${department.id}`} key={i}>
+                <li>{department.name}</li>
+              </Link>
             );
           })}
-        </Row>
+        </ul>
       </div>
     );
   }
 }
 
-export default DepartmentsList;
+export default SideBar;

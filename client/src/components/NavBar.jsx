@@ -32,14 +32,6 @@ class NavBar extends Component {
         </Navbar.Header>
 
         <Navbar.Collapse>
-          <Nav>
-            <NavDropdown eventKey={1} title="Stores" id="basic-nav-dropdown">
-              <MenuItem eventKey={1.1}>Store 1</MenuItem>
-              <MenuItem eventKey={1.2}>Store 2</MenuItem>
-              <MenuItem eventKey={1.3}>Store 3</MenuItem>
-            </NavDropdown>
-          </Nav>
-
           <Navbar.Form pullLeft>
             <FormGroup>
               <InputGroup>

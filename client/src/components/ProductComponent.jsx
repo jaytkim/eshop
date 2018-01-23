@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import { Col, Row, Image, Panel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
 
 // import { Card, CardTitle, CardText, CardImg } from 'reactstrap';
 
 class ProductComponent extends Component {
   render() {
-    const { img, price, name, weight } = this.props;
+    const { item_id, img, price, name, weight } = this.props;
 
     return (
       <div>
-        <Image src={img} rounded width="100%" />
-        <h4>{price}</h4>
-        <p>{name} </p>
-        <p>{weight}</p>
+        <Link to={`/items/${item_id}`}>
+          <Image src={img} rounded width="100%" />
+          <h4>{price}</h4>
+          <p>{name} </p>
+          <em>{weight}</em>
+        </Link>
       </div>
     );
   }

@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import StoreFront from './StoreFront';
 import DepartmentsList from './DepartmentsList';
 import DepartmentsContainer from './DepartmentsContainer';
+import Items from './Items';
 // import Products from './ProductsContainer';
 
 class App extends Component {
@@ -17,7 +18,8 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={StoreFront} />
             <Route path="/browse" component={DepartmentsList} />
-            <Route path="/department/:id" component={DepartmentsContainer} />
+            <Route path="/departments/:id" component={DepartmentsContainer} />
+            <Route path="/items/:id" component={Items} />
           </Switch>
         </Grid>
       </div>

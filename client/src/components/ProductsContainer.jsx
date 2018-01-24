@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Panel } from 'react-bootstrap';
+import { Col, Row, FormControl, Panel } from 'react-bootstrap';
 import ProductComponent from './ProductComponent';
 import Items from '../db/products.json';
 import '../index.css';
@@ -53,27 +53,38 @@ class ProductsContainer extends Component {
 
   render() {
     return (
-      <Panel className="main-contanier">
-        <Panel.Body>
-          {this.state.products.map((product, i) => {
-            return (
-              <div
-                className="col-lg-2 col-md-3 col-sm-4 col-xs-6 product"
-                key={i}
-              >
-                <ProductComponent
-                  item_id={product.item_id}
-                  img={product.img}
-                  price={product.price}
-                  name={product.name}
-                  weight={product.weight}
+      <div>
+        <div className="sortBy col-lg-3">
+          <select className="form-control">
+            <option value="">Sort By: Popularity</option>
+            <option value="low">Sort By: Lowest Price </option>
+            <option value="high">Sort By: Highest Price</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <Panel className="main-contanier">
+          <Panel.Body>
+            {this.state.products.map((product, i) => {
+              return (
+                <div
+                  className="col-lg-2 col-md-3 col-sm-4 col-xs-6 product"
                   key={i}
-                />
-              </div>
-            );
-          })}
-        </Panel.Body>
-      </Panel>
+                >
+                  <ProductComponent
+                    item_id={product.item_id}
+                    img={product.img}
+                    price={product.price}
+                    name={product.name}
+                    weight={product.weight}
+                    key={i}
+                  />
+                </div>
+              );
+            })}
+          </Panel.Body>
+        </Panel>
+      </div>
     );
   }
 }
